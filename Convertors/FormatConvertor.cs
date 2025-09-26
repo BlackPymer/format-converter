@@ -15,6 +15,6 @@ namespace Converter.Convertors
             if (DateTime.TryParse(value, out var dt)) return dt;
             return value;
         }
-
+        public Exception ParsingFailException;
     }
 }

@@ -22,8 +22,9 @@ namespace Converter
 
             JSON json = new JSON();
             Xml xml = new Xml();
-            xml.Save("D:\\MyProjects\\labs\\pivo\\Converter\\result.xml", json.Load("D:\\MyProjects\\labs\\pivo\\Converter\\test.json"));
-            json.Save("D:\\MyProjects\\labs\\pivo\\Converter\\result.json", xml.Load("D:\\MyProjects\\labs\\pivo\\Converter\\result.xml"));
+            Yaml yaml = new Yaml();
+            yaml.Save("D:\\MyProjects\\labs\\pivo\\Converter\\result.yaml", json.Load("D:\\MyProjects\\labs\\pivo\\Converter\\test.json"));
+            json.Save("D:\\MyProjects\\labs\\pivo\\Converter\\result.json", yaml.Load("D:\\MyProjects\\labs\\pivo\\Converter\\result.yaml"));
         }
     }
 }

@@ -19,7 +19,8 @@ namespace Converter
             Xml xml = new Xml();
             Yaml yaml = new Yaml();
             Csv csv = new Csv();
-            json.Save("D:\\MyProjects\\labs\\pivo\\Converter\\result.json", csv.Load("D:\\MyProjects\\labs\\pivo\\Converter\\test.csv"));
+            Html html = new Html();
+            csv.Save("D:\\MyProjects\\labs\\pivo\\Converter\\result.csv",html.Load("D:\\MyProjects\\labs\\pivo\\Converter\\result.html"));
         }
     }
 }

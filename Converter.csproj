@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Convertors\Csv.cs" />
     <Compile Include="Convertors\Json.cs" />
     <Compile Include="Convertors\FormatConvertor.cs" />
     <Compile Include="Convertors\Xml.cs" />

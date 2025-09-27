@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converter", "Converter.cspr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{7E50B1D3-C399-4D8C-BAFE-556C7CA1A491}"
 	ProjectSection(SolutionItems) = preProject
+		test.csv = test.csv
 		test.json = test.json
 	EndProjectSection
 EndProject

@@ -1,27 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget>
-  <debug>on</debug>
-  <window>
-    <title>Sample Konfabulator Widget</title>
-    <name>main_window</name>
-    <width>500</width>
-    <height>500</height>
-  </window>
-  <image>
-    <src>Images/Sun.png</src>
-    <name>sun1</name>
-    <hOffset>250</hOffset>
-    <vOffset>250</vOffset>
-    <alignment>center</alignment>
-  </image>
-  <text>
-    <data>Click Here</data>
-    <size>36</size>
-    <style>bold</style>
-    <name>text1</name>
-    <hOffset>250</hOffset>
-    <vOffset>100</vOffset>
-    <alignment>center</alignment>
-    <onMouseUp>sun1.opacity = (sun1.opacity / 100) * 90;</onMouseUp>
-  </text>
-</widget>
+<root>
+  <Title>
+    <row>War and Peace</row>
+    <row>1984</row>
+    <row>The Master and Margarita</row>
+  </Title>
+  <Author>
+    <row>Tolstoy L.N.</row>
+    <row>Orwell G.</row>
+    <row>Bulgakov M.A.</row>
+  </Author>
+  <Year>
+    <row>1869</row>
+    <row>1949</row>
+    <row>1967</row>
+  </Year>
+  <Pages>
+    <row>1300</row>
+    <row>328</row>
+    <row>480</row>
+  </Pages>
+  <Genre>
+    <row>Novel</row>
+    <row>Dystopia</row>
+    <row>Fantasy</row>
+  </Genre>
+</root>

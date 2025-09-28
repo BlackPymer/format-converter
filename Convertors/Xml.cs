@@ -9,11 +9,22 @@ namespace Converter.Convertors
         public override void Save(string file_path, Dictionary<string, object> data)
         {
             XDocument document = new XDocument();
-            foreach (var item in data)
+            if (data.Keys.Count != 1)
             {
-                var node = ConvertToXmlNode(item.Key, item.Value);
-                document.Add(node);
+                XElement root = new XElement("root");
+                foreach (var item in data)
+                {
+                    var node = ConvertToXmlNode(item.Key, item.Value);
+                    root.Add(node);
+                }
+                document.Add(root);
             }
+            else
+                foreach (var item in data)
+                {
+                    var node = ConvertToXmlNode(item.Key, item.Value);
+                    document.Add(node);
+                }
             document.Save(file_path);
         }
 
@@ -46,6 +57,11 @@ namespace Converter.Convertors
                     else
                         element.Add(ConvertToXmlNode(item.Key, item.Value));
                 }
+            }
+            else if(obj is List<object>)
+            {
+                foreach (var el in ((List<object>)obj))
+                    element.Add(ConvertToXmlNode("row", el));
             }
             else
             {

@@ -32,7 +32,7 @@ namespace Converter.Convertors
                     List<object> list = new List<object>();
                     foreach (var el in ((JArray)node).Children())
                         list.Add(ConvertJsonNode(el));
-                    break;
+                    return list;
                 case JTokenType.Object:
                     Dictionary<string, object> tmp = new Dictionary<string, object>();
                     foreach (var prop in ((JObject)node).Properties())
@@ -41,7 +41,6 @@ namespace Converter.Convertors
                 default:
                     return ((JValue)node).Value;
             }
-            return 0;
         }
     }
 }
